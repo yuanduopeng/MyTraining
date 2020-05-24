@@ -1,0 +1,26 @@
+﻿Build started 5/24/2020 10:33:22 AM.
+     1>Project "C:\Users\PUG1SZH\documents\visual studio 2015\Projects\ConsoleApplication1\function\function.vcxproj" on node 2 (Build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\04_function.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Release\04_function.pch" /Fo"Release\\" /Fd"Release\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt function.cpp
+         function.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\PUG1SZH\documents\visual studio 2015\Projects\ConsoleApplication1\Release\04_function.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\PUG1SZH\documents\visual studio 2015\Projects\ConsoleApplication1\Release\04_function.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\PUG1SZH\documents\visual studio 2015\Projects\ConsoleApplication1\Release\04_function.lib" /MACHINE:X86 /SAFESEH Release\function.obj
+         Release\stdafx.obj
+         Generating code
+         2 of 13 functions (15.4%) were compiled, the rest were copied from previous compilation.
+           1 functions were new in current compilation
+           2 functions had inline decision re-evaluated but remain unchanged
+         Finished generating code
+         function.vcxproj -> C:\Users\PUG1SZH\documents\visual studio 2015\Projects\ConsoleApplication1\Release\04_function.exe
+         function.vcxproj -> C:\Users\PUG1SZH\documents\visual studio 2015\Projects\ConsoleApplication1\Release\04_function.pdb (Full PDB)
+       FinalizeBuildStatus:
+         Deleting file "Release\04_function.tlog\unsuccessfulbuild".
+         Touching "Release\04_function.tlog\04_function.lastbuildstate".
+     1>Done Building Project "C:\Users\PUG1SZH\documents\visual studio 2015\Projects\ConsoleApplication1\function\function.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.76

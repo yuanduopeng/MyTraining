@@ -1,0 +1,27 @@
+﻿Build started 2/9/2020 11:46:29 AM.
+     1>Project "C:\Users\PUG1SZH\Documents\Visual Studio 2015\Projects\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (ConsoleApplication1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>InitializeBuildStatus:
+         Touching "Release\array.tlog\unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Release\array.pch" /Fo"Release\\" /Fd"Release\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt array.cpp
+         array.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\PUG1SZH\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Release\array.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\PUG1SZH\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Release\array.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\PUG1SZH\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Release\array.lib" /MACHINE:X86 /SAFESEH Release\array.obj
+         Release\stdafx.obj
+         Generating code
+         8 of 10 functions (80.0%) were compiled, the rest were copied from previous compilation.
+           1 functions were new in current compilation
+           2 functions had inline decision re-evaluated but remain unchanged
+         Finished generating code
+         ConsoleApplication1.vcxproj -> C:\Users\PUG1SZH\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Release\array.exe
+         ConsoleApplication1.vcxproj -> C:\Users\PUG1SZH\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Release\array.pdb (Full PDB)
+       FinalizeBuildStatus:
+         Deleting file "Release\array.tlog\unsuccessfulbuild".
+         Touching "Release\array.tlog\array.lastbuildstate".
+     1>Done Building Project "C:\Users\PUG1SZH\Documents\Visual Studio 2015\Projects\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.13
