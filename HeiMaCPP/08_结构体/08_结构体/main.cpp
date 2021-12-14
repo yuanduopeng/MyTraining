@@ -9,15 +9,41 @@
 #include <string>
 using namespace std;
 
+struct student //结构体声明
+{
+    string name; //结构成员
+    int age;
+    int score;
+} lisi = {"lisi",19,90}; //1.直接在声明后初始化结构体变量
+
+void printStudent1(student s)
+{
+    cout << s.name << s.age << s.score << endl;
+}
+
+//使用指针传递，将函数形参变为实参，可以减少内存空间的使用
+void printStudent2(student *s)
+{
+    s->age = 100;
+    cout << s->name << s->age << s->score << endl;
+}
+
+//结构体中const的使用场景
+void printStudent3(const student *s)
+{
+    // s->age = 100; //因为加了const，所以s只能读，不能写，防止误操作
+    cout << s->name << s->age << s->score << endl;
+}
+
 int main(int argc, const char * argv[]) {
     //结构体
     //用户自定义的数据类型，允许用户储存不同的数据类型
-    struct student //结构体声明
-    {
-        string name; //结构成员
-        int age;
-        int score;
-    } lisi = {"lisi",19,90}; //1.直接在声明后初始化结构体变量
+//    struct student //结构体声明
+//    {
+//        string name; //结构成员
+//        int age;
+//        int score;
+//    } lisi = {"lisi",19,90}; //1.直接在声明后初始化结构体变量
     student zhangsan = {"zhangsan", 20, 80}; //2.声明后再创建结构体变量
     student wangmazi; // 3.创建结构体变量后逐个初始化结构体变量成员
     wangmazi.name = "wangmazi";
@@ -63,6 +89,12 @@ int main(int argc, const char * argv[]) {
     cout << "老师" << teacher1.name << "的学生" << teacher1.stu1.name << "的年龄是" << teacher1.stu1.age << endl;
     
     //结构体作为函数参数
+    printStudent1(stu1); //值传递，数据量大时，因为要拷贝一份数据，所以占内存
+    printStudent2(&stu1); //地址传递
+    printStudent1(stu1);
+
+    printStudent3(&stu1);
+    
     
     return 0;
 }
