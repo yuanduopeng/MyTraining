@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include <string>
+#define MAX 1000
 using namespace std;
 
 struct contactor
@@ -21,31 +22,102 @@ struct contactor
     string tel;
     string adr;
 };
-void printMenu()
+
+struct contactorBook
 {
-    cout << "**********" << endl;
-    cout << "1.添加联系人" << endl;
-    cout << "2.显示联系人" << endl;
-    cout << "3.删除联系人" << endl;
-    cout << "4.查找联系人" << endl;
-    cout << "5.修改联系人" << endl;
-    cout << "6.清空联系人" << endl;
-    cout << "0.退出通讯录" << endl;
-    cout << "**********" << endl;
+    contactor cntc[MAX];
+    int m_size;
 };
 
+void printMenu()
+{
+    cout << "********************************" << endl;
+    cout << "********** 1.添加联系人 **********" << endl;
+    cout << "********** 2.显示联系人 **********" << endl;
+    cout << "********** 3.删除联系人 **********" << endl;
+    cout << "********** 4.查找联系人 **********" << endl;
+    cout << "********** 5.修改联系人 **********" << endl;
+    cout << "********** 6.清空联系人 **********" << endl;
+    cout << "********** 0.退出通讯录 **********" << endl;
+    cout << "********************************" << endl;
+};
+
+void printContactor(contactor cntc)
+{
+    cout << "联系人姓名：" << cntc.name << endl;
+    cout << "联系人性别：" << cntc.sex << endl;
+    cout << "联系人年龄：" << cntc.age << endl;
+    cout << "联系人电话：" << cntc.tel << endl;
+    cout << "联系人地址：" << cntc.adr << endl;
+}
+
+void addContactor(contactor cntc[], int * len)
+{
+    int i = 0;
+    while(!cntc[i].name.empty())
+    {
+        ++i;
+    }
+    cout << "请输入联系人姓名" << endl;
+    cin >> cntc[i].name;
+    cout << "请输入联系人性别(1 or 2)：1.男 2.女" << endl;
+    int sex_int = 0;
+    bool sex_fault = 1;
+    while (sex_fault == 1)
+    {
+        cin >> sex_int;
+        if (sex_int == 1)
+        {
+            cntc[i].sex = "男";
+            sex_fault = 0;
+        }
+        else if (sex_int == 2)
+        {
+            cntc[i].sex = "女";
+            sex_fault = 0;
+        }
+        else
+        {
+            cout << "性别输入有误，请重新输入" << endl;
+            sex_fault = 1;
+        }
+    }
+    cout << "请输入联系人年龄(0~150)" << endl;
+    cin >> cntc[i].age;
+    cout << "请输入联系人电话" << endl;
+    cin >> cntc[i].tel;
+    cout << "请输入联系人地址" << endl;
+    cin >> cntc[i].adr;
+    cout << "您输入的联系人信息为:" << endl;
+    printContactor(cntc[i]);
+}
+
 int main(int argc, const char * argv[]) {
-    printMenu();
+    contactorBook cB;
+    cB.m_size = 0;
     int userInput = 1;
     while (userInput != 0)
     {
+        printMenu();
         cin >> userInput;
         switch (userInput)
         {
             case 1: cout << "请添加联系人信息" << endl;
+                addContactor(cB.cntc, &cB.m_size);
+                break;
+            case 2: cout << "请输入需要显示的联系人姓名" << endl;
+                break;
+            case 3: cout << "请输入需要删除的联系人姓名" << endl;
+                break;
+            case 4: cout << "请输入需要查找的联系人信息" << endl;
+                break;
+            case 5: cout << "请输入需要修改的联系人姓名" << endl;
+                break;
+            case 6: cout << "确定要清空联系人吗？" << endl;
+                break;
+            case 0:
                 break;
             default: cout << "请重新输入" << endl;
-                printMenu();
                 break;
         }
     }

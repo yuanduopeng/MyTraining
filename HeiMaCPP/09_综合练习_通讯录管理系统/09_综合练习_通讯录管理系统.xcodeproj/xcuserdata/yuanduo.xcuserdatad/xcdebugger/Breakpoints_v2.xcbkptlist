@@ -3,4 +3,70 @@
    uuid = "7D15BA6C-3474-4967-947A-68E5AFEA960B"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D7353671-58A2-4849-B085-5E6E506B0DB3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "09_&#x7efc;&#x5408;&#x7ec3;&#x4e60;_&#x901a;&#x8baf;&#x5f55;&#x7ba1;&#x7406;&#x7cfb;&#x7edf;/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "addContactor(cntc, len)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "516910DF-A83A-402B-B35C-A4FB45593553"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "09_&#x7efc;&#x5408;&#x7ec3;&#x4e60;_&#x901a;&#x8baf;&#x5f55;&#x7ba1;&#x7406;&#x7cfb;&#x7edf;/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "addContactor(cntc, len)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7EF86F97-0A37-4D8F-A1DD-4E8E1E63E0E1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "09_&#x7efc;&#x5408;&#x7ec3;&#x4e60;_&#x901a;&#x8baf;&#x5f55;&#x7ba1;&#x7406;&#x7cfb;&#x7edf;/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "addContactor(cntc, len)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0EDDB1C6-C17C-4CA3-A364-1265F921EC9F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "09_&#x7efc;&#x5408;&#x7ec3;&#x4e60;_&#x901a;&#x8baf;&#x5f55;&#x7ba1;&#x7406;&#x7cfb;&#x7edf;/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "addContactor(cntc, len)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
