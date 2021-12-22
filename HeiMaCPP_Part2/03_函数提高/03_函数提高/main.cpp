@@ -13,10 +13,55 @@ void func1(int a, int = 10) //占位参数，也可以有默认值
 {
     cout << "zhanwei canshu" << endl;
 }
+
+//函数重载
+//作用：函数名可以相同，提高复用性
+//条件：同一个作用域下；函数名相同；函数**参数类型**、**或个数**、**或顺序**不同。
+void func2()
+{
+    cout << "function using" << endl;
+}
+//void func2(int a)
+//{
+//    cout << "function(int a) using" << endl;
+//}
+void func2(double a)
+{
+    cout << "function(double a) using" << endl;
+}
+void func2(int a, double b)
+{
+    cout << "function(int a, double b) using" << endl;
+}
+void func2(double a, int b)
+{
+    cout << "function(double a, int b) using" << endl;
+}
+void func2(int &a)
+{
+    cout << "function(int &a) using" << endl;
+}
+void func2(const int &a)
+{
+    cout << "function(const int &a) using" << endl;
+}
+
 int main(int argc, const char * argv[]) {
     cout << func(1) << endl;
     cout << func(10,10,10) << endl;
     cout << func(10, 10) << endl;
+    
+    //函数重载
+    func2();
+//    func2(2);
+    func2(3.14);
+    func2(2,3.14);
+    func2(3.14,2);
+    int a =10;
+    func2(a); // int &a = 10; 不合法
+    func2(10); // const int &a = 10; 合法
+    
+    
     return 0;
 }
 
