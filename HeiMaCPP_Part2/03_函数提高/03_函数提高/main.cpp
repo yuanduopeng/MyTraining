@@ -45,6 +45,15 @@ void func2(const int &a)
 {
     cout << "function(const int &a) using" << endl;
 }
+// 函数重载碰到默认参数
+void func3(int a)
+{
+    cout << "function3(int a) using" << endl;
+}
+void func3(int a, int b = 10)
+{
+    cout << "function3(int a, int b) using" << endl;
+}
 
 int main(int argc, const char * argv[]) {
     cout << func(1) << endl;
@@ -57,9 +66,11 @@ int main(int argc, const char * argv[]) {
     func2(3.14);
     func2(2,3.14);
     func2(3.14,2);
-    int a =10;
-    func2(a); // int &a = 10; 不合法
+    int a = 10;
+    func2(a); // int &a = 10; 不合法,10在常量区，只能引用堆区、栈区
     func2(10); // const int &a = 10; 合法
+    // func3(10); 错误，两个func3可以用一样方式一样调用，出现歧义
+    func3(10,20); //正确，只能调用双输入的func3
     
     
     return 0;
