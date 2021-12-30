@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <string>
+#include "circle.hpp"
 using namespace std;
 
 const double pi = 3.14;
@@ -90,6 +91,7 @@ public:
     }
 };
 
+// Exercise 1
 //案例：设计立方体类
 class Cube
 {
@@ -149,6 +151,71 @@ bool isCubeSame(Cube &c1, Cube &c2)
     }
 }
 
+// Exercise 2
+//class Point
+//{
+//private:
+//    double m_X;
+//    double m_Y;
+//public:
+//    void setPoint(double x, double y)
+//    {
+//        m_X = x;
+//        m_Y = y;
+//    }
+//    double getX()
+//    {
+//        return m_X;
+//    }
+//    double getY()
+//    {
+//        return m_Y;
+//    }
+//};
+//class Circ
+//{
+//private:
+//    double m_R;
+//    Point m_Center;
+//public:
+//    void setCenter(Point center)
+//    {
+//        m_Center = center;
+//    }
+//    void setRadius(double r)
+//    {
+//        m_R = r;
+//    }
+//    Point getCenter()
+//    {
+//        return m_Center;
+//    }
+//    double getRadius()
+//    {
+//        return m_R;
+//    }
+//};
+
+void isPinC(Point &p, Circ &c)
+{
+    double m_R2 = c.getRadius();
+    double m_Dis2 = (p.getX() - c.getCenter().getX()) * (p.getX() - c.getCenter().getX())
+                    + (p.getY() - c.getCenter().getX()) * (p.getY() - c.getCenter().getX());
+    if (m_R2 == m_Dis2)
+    {
+        cout << "point on the circle" << endl;
+    }
+    else if (m_R2 > m_Dis2)
+    {
+        cout << "point in the circle" << endl;
+    }
+    else
+    {
+        cout << "point out of the circle" << endl;
+    }
+
+}
+
 int main(int argc, const char * argv[]) {
     // 通过圆类创建具体的圆对象c1，也叫实例化
     Circle c1;
@@ -180,6 +247,7 @@ int main(int argc, const char * argv[]) {
     cout << p2.getAge() << endl;
     p2.setLover("lisi");
     
+    // Exercise 1
     Cube c2;
     c2.setLHW(5, 10, 15);
     cout << c2.calcVolume() << endl;
@@ -188,6 +256,16 @@ int main(int argc, const char * argv[]) {
     c3.setLHW(5, 10, 15);
     cout << isCubeSame(c2, c3) << endl;
     cout << c2.isCubeSameByClass(c3) << endl;
+    
+    // Exercise 2
+    Point pt;
+    pt.setPoint(10, 10);
+    Point center;
+    center.setPoint(10, 15);
+    Circ cr;
+    cr.setCenter(center);
+    cr.setRadius(5);
+    isPinC(pt, cr);
     
     return 0;
 }

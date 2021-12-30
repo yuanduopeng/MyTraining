@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		87F6F876277B59E00087114A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87F6F875277B59E00087114A /* main.cpp */; };
+		87F6F87F277E06060087114A /* point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87F6F87D277E06060087114A /* point.cpp */; };
+		87F6F882277E07070087114A /* circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87F6F880277E07070087114A /* circle.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		87F6F872277B59E00087114A /* 04_类 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "04_类"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F6F875277B59E00087114A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		87F6F87C277E05A40087114A /* point.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = point.h; sourceTree = "<group>"; };
+		87F6F87D277E06060087114A /* point.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = point.cpp; sourceTree = "<group>"; };
+		87F6F880277E07070087114A /* circle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = circle.cpp; sourceTree = "<group>"; };
+		87F6F881277E07070087114A /* circle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = circle.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +63,11 @@
 		87F6F874277B59E00087114A /* 04_类 */ = {
 			isa = PBXGroup;
 			children = (
+				87F6F87C277E05A40087114A /* point.h */,
 				87F6F875277B59E00087114A /* main.cpp */,
+				87F6F87D277E06060087114A /* point.cpp */,
+				87F6F880277E07070087114A /* circle.cpp */,
+				87F6F881277E07070087114A /* circle.hpp */,
 			);
 			path = "04_类";
 			sourceTree = "<group>";
@@ -119,6 +129,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87F6F882277E07070087114A /* circle.cpp in Sources */,
+				87F6F87F277E06060087114A /* point.cpp in Sources */,
 				87F6F876277B59E00087114A /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
